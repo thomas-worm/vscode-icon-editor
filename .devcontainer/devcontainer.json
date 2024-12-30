@@ -1,0 +1,17 @@
+{
+  "name": "Icon Editor VSCode extension",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint", 
+    "ms-vscode.node-debug2"
+  ],
+  "forwardPorts": [],
+  "postCreateCommand": "npm install",
+  "remoteUser": "node"
+}
